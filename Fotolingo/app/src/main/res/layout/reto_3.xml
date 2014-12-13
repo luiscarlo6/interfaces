@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70AFAE"
+    android:id="@+id/reto_3"
+    android:clickable="true">
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Capturar"
+        android:id="@+id/botonCapturar"
+        android:layout_below="@+id/textoConsejos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"
+        android:background="#D0F1F2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Humo"
+        android:gravity="center"
+        android:id="@+id/tituloReto1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Haz una foto de humo en contraluz"
+        android:gravity="center"
+        android:id="@+id/textoReto"
+        android:password="false"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tituloReto1"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Retos anteriores"
+        android:id="@+id/botonRetosAnteriores"
+        android:singleLine="false"
+        android:layout_below="@+id/botonCapturar"
+        android:layout_centerHorizontal="true"
+        android:background="#D0F1F2"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:text="Toca aquí para recibir consejos"
+        android:textSize="15sp"
+        android:id="@+id/textoConsejos"
+        android:clickable="false"
+        android:textIsSelectable="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Galeria"
+        android:id="@+id/botonGaleria"
+        android:layout_below="@+id/botonRetosAnteriores"
+        android:layout_centerHorizontal="true"
+        android:background="#D0F1F2"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

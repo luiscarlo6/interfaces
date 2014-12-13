@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#F2FFFF"
     tools:context=".FullscreenActivity"
     android:id="@+id/principal">
 
@@ -14,46 +14,54 @@
          android:fitsSystemWindows. -->
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:id="@+id/botonSiguiente"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:background="#D0F1F2" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:id="@+id/botonAnterior"
         android:layout_alignTop="@+id/botonSiguiente"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:background="#D0F1F2"/>
 
     <ImageView
         android:id="@+id/foto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/paisaje2"
+        android:src="@drawable/paisaje1"
         android:tag="@drawable/paisaje2"
-        android:layout_below="@+id/nombre"
-        android:layout_alignParentLeft="true"
-        android:layout_above="@+id/ratingBar" />
+        android:layout_below="@+id/id_reto"
+        android:layout_above="@+id/ratingBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:text="Ver Reto"
         android:id="@+id/botonVerReto"
         android:layout_below="@+id/ratingBar"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#D0F1F2"
+        android:textSize="18dp" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar"
         android:layout_above="@+id/botonSiguiente"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -61,26 +69,34 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Daniel Leones"
         android:id="@+id/nombre"
+        android:layout_toStartOf="@+id/botonVerReto"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/botonVerReto"
+        android:layout_alignEnd="@+id/botonVerReto" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Reto Diario"
+        android:text="Montañas"
         android:id="@+id/id_reto"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignTop="@+id/nombre"
+        android:layout_alignLeft="@+id/botonSiguiente"
+        android:layout_alignStart="@+id/botonSiguiente" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="95%"
+        android:textSize="25dp"
         android:id="@+id/calif"
-        android:layout_above="@+id/foto"/>
+        android:layout_above="@+id/botonSiguiente"
+        android:layout_alignRight="@+id/botonSiguiente"
+        android:layout_alignEnd="@+id/botonSiguiente" />
 
 
 </RelativeLayout>

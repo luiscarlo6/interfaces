@@ -1,0 +1,43 @@
+package com.example.luiscarlo.fotolingo;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+/**
+ * Created by Luiscarlo on 04-11-2014.
+ */
+public class Reto1 extends Activity implements View.OnTouchListener {
+
+    String arregloConsejo[]= {"Aprovecha el contraste entre con el cielo","Toma varias fotos y elige la mejor",
+                                "Aprovecha la iluminación natural"};
+    int cont=0;
+    TextView textConsejo;
+    Button btCapturar;
+    Button btAnteriores;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.reto_1);
+
+        btCapturar = (Button) findViewById(R.id.botonCapturar);
+
+        textConsejo = (TextView) findViewById(R.id.textoConsejos);
+        textConsejo.setOnTouchListener(this);
+    }
+
+    @Override
+    public boolean onTouch(View view, MotionEvent arg1) {
+        if (arg1.getAction()==MotionEvent.ACTION_DOWN){
+            textConsejo.setText(arregloConsejo[cont++]);
+            if (cont==3){
+                cont=0;
+            }
+        }
+        return true;
+    }
+}

@@ -3,6 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#70AFAE"
     android:id="@+id/inicio">
 
     <Button
@@ -13,25 +14,29 @@
         android:layout_gravity="center_vertical"
         android:layout_marginBottom="49dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#D0F1F2"
+        style="?android:attr/borderlessButtonStyle"
+        android:clickable="false" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Fotolingo"
         android:textSize="45dp"
         android:id="@+id/titulo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp" />
+        android:layout_marginTop="15dp"/>
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:id="@+id/imgFotolingo"
-        android:src="@drawable/photo"
+        android:src="@drawable/photo1"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#70AFAE"
+        android:adjustViewBounds="true" />
 
 </RelativeLayout>
